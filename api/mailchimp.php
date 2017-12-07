@@ -102,8 +102,7 @@ function callAddUser($mc, $userData) {
 		$response = json_encode(array(
 			"status"		=> 200,
 			"message"		=> "Success",
-			"emailAddress"	=> $addUser["email_address"],
-			"md5"			=> $addUser["merge_fields"]["MD5"]
+			"emailAddress"	=> $addUser["email_address"]
 		));
 
 		// Let's send back the encoded response
@@ -141,8 +140,7 @@ function callGetUser($mc, $userData) {
 		$response = json_encode(array(
 			"status"		=> 200,
 			"message"		=> "Success",
-			"emailAddress"	=> $getUser["email_address"],
-			"md5"			=> $getUser["merge_fields"]["MD5"]
+			"emailAddress"	=> $getUser["email_address"]
 		));
 
 		// Let's send back the encoded response
